@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)file:///D:/All%20Folder%20i%20made/Coding/Project%20Web/googledrivedirectdownloader/Untitled-2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Calculator_files/css2" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="login">
+        <h1>Hai</h1>
+        nama:<input type="text" id="nama">
+        pass:<input type="password" id="pass">
+    </div>
+    <br>
+    <div id="kalkulator">
+        angka1: <input type="number" name="" id="num1">
+        angka2: <input type="number" id="num2">
+        <button onclick="checkayam()">ayam</button>
+    </div>
+    <div id="result">
+        <h3 id="restext">Result : 97</h3>
+    </div>
+    <script>
+        function checkayam(){
+            nama = document.getElementById('nama').value;
+            pass = document.getElementById('pass').value;
+            num1 = document.getElementById('num1').value;
+            num2 = document.getElementById('num2').value;
+            num3 = parseInt(num1) + parseInt(num2);
+            restext = document.getElementById('restext').innerHTML = "Result : "+num3;
+            if(nama == ""){ 
+                alert("masukan nama mu");
+            }
+        }
+    </script>
+    <style>
+
+        h1{
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;  
+            color: #2b2b33;
+            font-size: 13vh;
+        }
+        #login{
+            text-align:center;
+            align-self: center;
+            font-family: 'Roboto Mono', monospace;
+        }
+        #kalkulator{
+            text-align:center;
+            align-self: center;
+            font-family: 'Roboto Mono', monospace;
+        }
+        input{
+            outline: none;
+            border: none;
+            border-bottom: 2px solid black;
+            font-family: 'Roboto Mono', monospace;
+            font-size: 3vh;
+            width: 10vw;
+        }
+        button{
+            border: 2px solid black;
+            background: none;
+            font-family: 'Roboto Mono', monospace;
+            color: black;
+            padding: 10px;
+            transition: 0.2s;
+        }
+        button:hover{
+            background: black;
+            color: white;
+        }
+        h3{
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+        }
+    </style>
+
+</body></html>
